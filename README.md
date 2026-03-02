@@ -54,6 +54,30 @@ django-book-inventory/
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Sign In Page
+![Sign In](screenshots/signin.png)
+
+### 📝 Sign Up Page
+![Sign Up](screenshots/signup.png)
+
+### ➕ Add Book Page
+![Add Book](screenshots/add_book_part1.png)
+![Add Book](screenshots/add_book_part2.png)
+
+### 📖 View Books Page
+![View Books](screenshots/view_books.png)
+
+### ✏️ Update Book Page
+![Update Book](screenshots/update_book_part1.png)
+![Update Book](screenshots/update_book_part2.png)
+
+### ❌ Delete Book Page
+![Delete Book](screenshots/delete_book.png)
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
