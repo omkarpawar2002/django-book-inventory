@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+<title>Sign Up</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="
+    background-color: #74aee0; 
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;">
+    <h1 style="text-align: center; margin-bottom: 20px; color: white;">Sign Up / Register</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form | crispy}}
+        <br>
+        <button type="submit" class="btn btn-light col-5">Sign Up</button>
+        <a href="{% url 'Sign_In' %}"><button type="button" class="btn btn-light col-5 float-end">Sign
+                In</button></a>
+    </form>
+</div>
+{% endblock %}

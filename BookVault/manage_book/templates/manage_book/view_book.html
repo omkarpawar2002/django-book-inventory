@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>View Book</title>
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+        <tr style="text-align: center;">
+            <th style="    background-color: black;color: white;">Id</th>
+            <th style="    background-color: black;color: white;">Title</th>
+            <th style="    background-color: black;color: white;">Author Name</th>
+            <th style="    background-color: black;color: white;">Isbn No</th>
+            <th style="    background-color: black;color: white;">Price</th>
+            <th style="    background-color: black;color: white;">Pages</th>
+            <th style="    background-color: black;color: white;">Language</th>
+            <th style="    background-color: black;color: white;">IsAvailable</th>
+            <th style="    background-color: black;color: white;">Description</th>
+            <th style="    background-color: black;color: white;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr style="text-align: center;">
+            <td>{{record.id}}</td>
+            <td>{{record.title}}</td>
+            <td>{{record.author_name}}</td>
+            <td>{{record.isbn_no}}</td>
+            <td>{{record.price}}</td>
+            <td>{{record.pages}}</td>
+            <td>{{record.language}}</td>
+            <td>{{record.isAvailable}}</td>
+            <td>{{record.description}}</td>
+            <td>
+                <a href="{% url 'Update_Book' record.id %}"><button
+                        class="btn btn-outline-dark me-2">Update</button></a>
+                <a href="{% url 'Delete_Book' record.id %}"><button
+                        class="btn btn-outline-dark me-2">Delete</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

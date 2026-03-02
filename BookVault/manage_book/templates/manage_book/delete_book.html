@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Delete Book</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="
+    background-color: #74aee0; 
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;">
+    <h1 style="text-align: center; margin-bottom: 20px; color: white;">Delete Book Details</h1>
+    <form method="post">
+        {% csrf_token %}
+        <h2 style="margin-top: 10px;">Author Naame : {{obj.author_name}}</h2>
+        <h2 style="margin-top: 10px;">Book Titlt : {{obj.title}}</h2>
+        <br>
+        <button type="submit" class="btn btn-light col-5">Delete Book</button>
+        <a href="{% url 'View_Book' %}"><button type="button" class="btn btn-light col-5 float-end">Cancel
+                Book</button></a>
+    </form>
+</div>
+{% endblock %}

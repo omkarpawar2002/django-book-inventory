@@ -1,0 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# MySQL dump files
+*.sql
+
+# Static files (if collected)
+staticfiles/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Migrations (optional - usually keep them)
+# */migrations/*
+# !*/migrations/__init__.py
